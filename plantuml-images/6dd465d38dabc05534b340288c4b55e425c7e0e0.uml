@@ -1,0 +1,24 @@
+@startuml
+package ClassExample{
+
+    entity Cliente {
+        +nome: String
+        +morada: String
+        +telefone: Integer
+    }
+
+    entity Encomenda {
+        +data: Date
+        +localEntrega: String
+        +criarEncomenda()
+    }
+
+    entity Produto {
+        +descricao: String
+        +preco: Float
+    }
+
+    Cliente "1" - "1..*" Encomenda
+    Encomenda "1" - "0..*" Produto
+}
+@enduml

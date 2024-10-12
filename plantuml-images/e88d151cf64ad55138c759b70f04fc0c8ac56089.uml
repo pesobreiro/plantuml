@@ -1,0 +1,31 @@
+@startuml
+
+package Database {
+    entity Book {
+        id : int {PK}
+        title : String
+        author : String
+    }
+
+    entity Member {
+        id : int {PK}
+        name : String
+        address : String
+    }
+
+    entity Loan {
+        id : int {PK}
+        bookId : int {FK}
+        memberId : int {FK}
+    }
+
+    entity Fine {
+        id : int {PK}
+        loanId : int {FK}
+        fine : double
+    }
+
+    Book "1" - "many" Loan
+    Member "1" - "many" Loan
+}
+@enduml

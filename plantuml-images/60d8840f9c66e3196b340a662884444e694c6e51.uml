@@ -1,0 +1,38 @@
+@startuml Class Diagram Example
+class Animal {
+  int id
+  String name
+
+  +int getId()
+  +String getName()
+  +void makeSound()
+}
+
+class Dog extends Animal {
+  String breed
+
+  +String getBreed()
+  +void makeSound()
+}
+
+class Cat extends Animal {
+  String furColor
+
+  +String getFurColor()
+  +void makeSound()
+}
+
+class Owner {
+  int id
+  String name
+  List<Animal> pets
+
+  +int getId()
+  +String getName()
+  +List<Animal> getPets()
+  +void addPet(Animal pet)
+}
+
+Animal "1" *-- "0..*" Owner : has
+Owner "1" o-- "0..*" Animal : owns
+@enduml

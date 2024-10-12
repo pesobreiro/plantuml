@@ -1,0 +1,13 @@
+@startuml
+
+actor Bibliotecario
+actor Cliente
+actor Utilizador
+
+Cliente -> (Emprestar Livro)
+(Emprestar Livro) --> Bibliotecario
+Bibliotecario -> (Registar Livro)
+Bibliotecario -> (Registar Utilizador)
+Cliente -> (Devolver Livro)
+(Devolver Livro) --> Bibliotecario
+@enduml

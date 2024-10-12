@@ -1,0 +1,15 @@
+@startuml
+|Customer|
+start
+:Order Received;
+:Check Inventory;
+|Warehouse|
+if (In Stock?) then (yes)
+  :Prepare Shipment;
+else (no)
+  :Notify Customer;
+endif
+|Customer|
+:Order Shipped;
+stop
+@enduml
