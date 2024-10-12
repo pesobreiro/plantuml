@@ -16,10 +16,10 @@ actividades:
     sistema na perspetiva dos seus utilizadores.
 -   Diagramas de atividade: modelam o fluxo de atividades em um
     processo.
--   Diagramas de estado:\*\* Representam os diferentes estados de um
+-   Diagramas de estado: Representam os diferentes estados de um
     objeto e as transições entre eles.
 
-**Outros tipos de diagramas:**\*\*\*\*
+**Outros tipos de diagramas:**
 
 -   Diagramas de componentes: mostram os componentes de um sistema e
     suas dependências.
@@ -90,10 +90,9 @@ Para instalar o PlantUML no Linux, siga estes passos:
 
 Para converter o ficheiro Markdown para docx ou PDF, pode ser utilizado
 o Pandoc. A conversão com os diagramas pode ser realizada, com o (filtro
-para pandoc do
-PlantUML)\[https://pypi.org/project/pandoc-plantuml-filter/\], também
+para pandoc do [PlantUML](https://pypi.org/project/pandoc-plantuml-filter), também
 disponível no
-(github)\[https://github.com/pesobreiro/pandoc-plantuml-filter\]. Isto
+[github](https://github.com/pesobreiro/pandoc-plantuml-filter). Isto
 corresponde à versão 0.1.5, para funcionar corretamente têm que fazer um
 pouco de hacking no source. Comando para instalar:
 
